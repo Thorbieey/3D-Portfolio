@@ -113,7 +113,7 @@ import {
       company_name: "AITI",
       icon: tesla,
       iconBg: "#383E56",
-      date: "Nov 2022 -  Current Date",
+      date: "Nov 2022 -  Present",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -126,7 +126,7 @@ import {
       company_name: "The AA",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Aug 2023 - Current Date",
+      date: "Aug 2023 - Present",
       points: [
         "Spearheading the onboarding process for new employees, managing hardware and software troubleshooting and installation to maintain optimal performance levels.",
         "Providing comprehensive support to users, diagnosing issues and delivering effective solutions via phone, email, and desktop.",
@@ -150,7 +150,7 @@ import {
       company_name: "LBSL",
       icon: meta,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "Aug 2018 - Sep 2020",
       points: [
         "Coordinating post-delivery vehicle inspections for a fleet of over 150 vehicles, ensuring compliance with industry standards and safety regulations.",
         "Lead quality improvement initiatives, authoring Standard Operating Procedures (SOPs) and Service Level Agreements (SLAs) to streamline processes, resulting in a 20% increase in inspection efficiency.",
