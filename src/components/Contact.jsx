@@ -3,9 +3,12 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
+import { github, linkedin } from "../assets";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+
+
 
 const Contact = () => {
   const formRef = useRef();
@@ -16,6 +19,16 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+
+  // const ContactCard = ({ index, title, icon }) => (
+  //   <div
+  //         className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+  //       >
+  //         <img
+  //           src={icon} alt='web-development' className='w-16 h-16 object-contain'
+  //         />
+  //       </div>
+  // );
 
   const handleChange = (e) => {
     const { target } = e;
@@ -33,16 +46,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_q2o6rnt',
+        'template_glpycse',
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Tobi",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "tobiolajide887@yahoo.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'lrTE2MmytWl5IwQcm'
       )
       .then(
         () => {
@@ -70,7 +83,8 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
+        <p className={styles.sectionSubText}>Get in touch 
+        </p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
@@ -85,7 +99,7 @@ const Contact = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder="What's your name?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -96,7 +110,7 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="What's your email address?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -107,18 +121,33 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='What you want to say?'
+              placeholder='What do you want to say?'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            className='bg-tertiary mb-8 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+
+        <div 
+          className="flex flex-row justify-around"
+        > 
+          <a href="https://github.com/Thorbieey/" target="_blank" className=" w-1/4 h-1/4 object-contain">
+            <img
+              src={github} alt='github'
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/tobi-olajide/" target="_blank" className=" w-1/4 h-1/4 object-contain">
+            <img
+              src={linkedin} alt='linkedin' 
+            />
+          </a>
+        </div>
       </motion.div>
 
       <motion.div

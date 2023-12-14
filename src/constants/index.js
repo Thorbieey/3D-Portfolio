@@ -11,6 +11,7 @@ import {
     redux,
     tailwind,
     nodejs,
+    threejs,
     mongodb,
     git,
     figma,
@@ -19,10 +20,10 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+    weatherdashboard,
+    passwordgenerator,
+    codequiz,
+    readmegenerator,
   } from "../assets";
   
   export const navLinks = [
@@ -73,16 +74,8 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
     },
     {
       name: "Tailwind CSS",
@@ -116,11 +109,11 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Web Developer",
+      company_name: "AITI",
+      icon: tesla,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Nov 2022 -  Current Date",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -129,102 +122,51 @@ import {
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      title: "HR Systems Administrator",
+      company_name: "The AA",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Aug 2023 - Current Date",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Spearheading the onboarding process for new employees, managing hardware and software troubleshooting and installation to maintain optimal performance levels.",
+        "Providing comprehensive support to users, diagnosing issues and delivering effective solutions via phone, email, and desktop.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Administering HR information systems, ensuring data accuracy and system reliability.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "Customer Service Advisor",
+      company_name: "02",
       icon: shopify,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Jul 2022 - Oct 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Actively listening to customer, trainers and managers feedback to improve service quality, maintaining a 98% customer satisfaction rating.",
+        "Handling customer complaints and concerns, ensuring their satisfaction and retention, resulting in a 90%+ complaint resolution rate.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
+      title: "Quality Assurance Supervisor",
+      company_name: "LBSL",
       icon: meta,
       iconBg: "#E6DEDD",
       date: "Jan 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Coordinating post-delivery vehicle inspections for a fleet of over 150 vehicles, ensuring compliance with industry standards and safety regulations.",
+        "Lead quality improvement initiatives, authoring Standard Operating Procedures (SOPs) and Service Level Agreements (SLAs) to streamline processes, resulting in a 20% increase in inspection efficiency.",
+        "Collaborating remotely with the development team on Microsoft 365 to identify and resolve software defects and issues.",
       ],
-    },
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Weather Dashboard",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Responsive web-based platform that provides users with the ability to easily check the weather outlook for any city around the world from any device.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
+          name: "js",
           color: "blue-text-gradient",
         },
         {
@@ -232,34 +174,64 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "css",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: weatherdashboard,
+      source_code_link: "https://thorbieey.github.io/Weather-Dashboard/",
     },
     {
-      name: "Trip Guide",
+      name: "Password Generator",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Web application for personal or professional users that generates passwords of varying complexities based on user-selected criterias.",
       tags: [
         {
-          name: "nextjs",
+          name: "js",
           color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
         },
         {
           name: "css",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: passwordgenerator,
+      source_code_link: "https://thorbieey.github.io/Password-Generator/",
+    },
+    {
+      name: "Code Quiz",
+      description:
+        "A dynamic and interactive web application, where users are presented with multiple-choice code-related questions.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: codequiz,
+      source_code_link: "https://thorbieey.github.io/Code-Quiz-OT/",
+    },
+    {
+      name: "ReadMe Generator",
+      description:
+        "A command-line application that dynamically generates a professional README.md file from a user's input.",
+      tags: [
+        {
+          name: "nodejs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "js",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: readmegenerator,
+      source_code_link: "https://github.com/Thorbieey/ReadMe-Generator/",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };
