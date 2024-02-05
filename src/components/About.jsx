@@ -44,11 +44,16 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-5xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in Python and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        Diving into the binary realm with a mechatronic heart and an electrical
+        pulse, I am a detail-driven System Administrator who doesn't just keep
+        servers running but loves to build apps that dance to the rhythm of 
+        efficiency. 
+        
+        With a background in Mechatronics, Robotics, and 
+        Electrical Engineering, I bring a unique blend of tech wizardry and 
+        creative flair to the world of IT. Let's not just maintain systems;
+        let's conjure up applications that make technology a joyous symphony 
+        of ones and zeros! 
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
