@@ -42,22 +42,23 @@ import {
   ];
   
   const services = [
-    {
+      {
+      title: "System Administrator",
+      icon: creator,
+    },
+      {
       title: "Web Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "IT Support",
       icon: mobile,
     },
     {
       title: "Backend Developer",
       icon: backend,
     },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
+    
   ];
   
   const technologies = [
